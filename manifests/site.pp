@@ -55,18 +55,34 @@ node default {
   # core modules, needed for most things
   include dnsmasq
   include git
-  include hub
-  include nginx
+  include dropbox
+  include skype
+  include onepassword
+  include virtualbox
+  include java
+  include firefox
+  include vagrant
+  include sourcetree
+  include github_for_mac
+  include iterm2::stable
+  include wget
+  include evernote
+  include omnigraffle::pro
+  include alfred
+  include chrome
+  include phantomjs
+  include phpstorm
+  include sequel_pro
+  include processing
+  include cyberduck
+  include sublime_text_2
+  include spectacle
+  include spotify
 
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
     fail('Please enable full disk encryption and try again')
   }
-
-  # node versions
-  include nodejs::v0_6
-  include nodejs::v0_8
-  include nodejs::v0_10
 
   # default ruby versions
   ruby::version { '1.9.3': }
