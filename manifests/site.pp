@@ -53,8 +53,9 @@ Homebrew::Formula <| |> -> Package <| |>
 
 node default {
   # core modules, needed for most things
-  include dnsmasq
   include git
+  include hub
+  include dnsmasq
   include dropbox
   include skype
   include onepassword
@@ -70,10 +71,8 @@ node default {
   include omnigraffle::pro
   include alfred
   include chrome
-  include phantomjs
   include phpstorm
   include sequel_pro
-  include processing
   include cyberduck
   include sublime_text_2
   include spectacle
